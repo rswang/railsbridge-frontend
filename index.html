@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet"/>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- JQuery -->
+        <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+        <!-- Bootstrap JS -->
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+
+        <script src="index.js"></script>
+        <script src="intro.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-sm-1">Tests</div>
+                <div class="col-sm-11">A wide column</div> -->
+                <div id="red" class="col-lg-6 col-sm-8 col-xs-12">
+
+        <div>
+            <pre>
+                $('#name-input').on("keydown", function(event) {
+        if (event.keyCode == 13) {
+            var name_input = $("#name-input").val();
+            name_input += " Goofball";
+            $("#name").text(name_input);
+        }
+    });
+
+</pre>
+        </div>
+
+
+        <table>
+            <tr>
+                <td>A cell</td>
+                <td>Another cell</td>
+            </tr>
+            <tr>
+                <td>A cell</td>
+                <td>Another cell</td>
+            </tr>
+        </table>
+
+</div>
+<div class="col-sm-6">
+
+        <h1>Hello World!</h1>
+        <h2>Saturday, June 13</h2>
+        <p>My name is <span id="name">Rachel</span>.</p>
+        <div>
+            <input id="name-input" type="text" name="name" placeholder="Name" />
+            <button id="print-btn" class="btn btn-success">Print name</button>
+        </div>
+
+        <p id="hide">Click the button below to hide me!</p>
+        <button id="hide-btn">Click me!</button>
+            
+            </div>
+        </div>
+
+    </body>
+</html>
