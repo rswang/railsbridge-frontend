@@ -18,11 +18,6 @@ $(document).ready(function() {
                 $("#avatar").attr("src", data.avatar_url);
                 $("#public-repos").text(data.public_repos);
                 $("#username").text(data.login);
-
-                console.log(data.name);
-                console.log(data.avatar_url);
-                console.log(data.public_repos);
-                console.log(data.login);
             },
             error: function(jqXHR, textStatus, error) {
                 if (error == "Not Found") {
