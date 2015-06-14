@@ -23,6 +23,9 @@ $(document).ready(function() {
                 if (error == "Not Found") {
                     $("#response").hide();
                     $("#error").text("Username not found");
+                } else {
+                    $("#response").hide();
+                    $("#error").text("Error unknown");
                 }
             }
         })
